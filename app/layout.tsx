@@ -1,20 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Link from "next/link";
-import { Cormorant_Unicase, Kaisei_Tokumin } from "next/font/google";
-
-const kaisei = Kaisei_Tokumin({
-  subsets: ["latin"],
-  display: "swap",
-  weight: "400",
-  variable: "--font-kaisei",
-});
-const cormorant_uni = Cormorant_Unicase({
-  subsets: ["latin"],
-  display: "swap",
-  weight: ["500", "700"],
-  variable: "--font-cormorant",
-});
+import { kaisei, cormorant_uni } from "./fonts";
 
 export const metadata: Metadata = {
   title: "Photfolio",
@@ -28,31 +15,31 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`font-kaisei bg-white text-brown`}>
+      <body className={`${kaisei.className} bg-white text-brown`}>
         <nav
-          className={`font-cormorant flex px-10 items-start justify-between font-bold text-2xl py-6`}
+          className={`${cormorant_uni.className} flex px-4 items-start justify-between font-semibold text-2xl py-4`}
         >
           <Link
-            className="font-extrabold hover:text-green hover-underline"
+            className="font-bold hover:text-darkGreen hover-underline"
             href={"./"}
           >
             PHOTFOLIO
           </Link>
           <span className="flex gap-6">
             <Link
-              className="hover:text-green hover-underline "
+              className="hover:text-darkGreen hover-underline "
               href={"./gallery"}
             >
               gallery
             </Link>
-            <Link
-              className="hover:text-green hover-underline "
+            {/* <Link
+              className="hover:text-darkGreen hover-underline "
               href={"./about"}
             >
               about
-            </Link>
+            </Link> */}
             <Link
-              className="hover:text-green hover-underline "
+              className="hover:text-darkGreen hover-underline "
               href={"./contact"}
             >
               contact
