@@ -28,3 +28,11 @@
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+
+.grid-masonry {
+  grid-template-columns: masonry;
+}
+
+.active {
+  color: #283618;
+}

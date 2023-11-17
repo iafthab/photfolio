@@ -14,7 +14,7 @@ import Footer from "./components/Footer";
 export default function Home() {
   return (
     <main className={`h-screen`}>
-      <section className="h-4/5 px-4 flex items-center text-green justify-evenly">
+      <section className="h-4/5 px-4 flex items-center text-darkGreen justify-evenly">
         <div>
           <h1 className="text-9xl text-end font-medium tracking-wide">
             AFTHAB
@@ -22,16 +22,19 @@ export default function Home() {
           </h1>
           <p className="text-end text-lg">Rarely based photographer</p>
         </div>
+        {/* <div className="w-[30%]"> */}
         <Image
-          // className="border-[10px] border-brown"
+          className="w-fit"
           src={profileImg}
-          alt="baby holding boy's hand at the beach"
-          height={550}
-          width={440}
+          alt="photo of me ;)"
+          height={500}
+          width={400}
           placeholder="blur"
+          property={"true"}
         />
+        {/* </div> */}
       </section>
-      <section className="h-2/5 px-20 gap-10 bg-lightOrange/80 text-green justify-center flex items-center">
+      <section className="h-2/5 px-20 gap-10 bg-[#45B1E8]/70 text-darkGreen justify-center flex items-center">
         <Image
           // className="border-[10px] border-brown"
           src={secondaryImg}
@@ -43,71 +46,73 @@ export default function Home() {
         <p className="text-3xl font-light text-balance">
           Every Picture contains a story. How that frame came to be. The moment
           of the snap. What transpired before and after.
-          {/* I am not saying this because iam a sh!tty photographer, But more than
+          {/* I am not saying this because iam a sh!tty photographer,or maybe i am, But more than
           lighting or composition, a picture should capture the spirit of the
           moment. While looking at these pictures, i feel like i am back at that
         particular moment- reliving it. */}
         </p>
       </section>
-      <section className="my-32 grid grid-cols-4 overflow-hidden">
+      <section className="my-32 columns-4 gap-0 overflow-hidden">
         <Image
           src={grid3}
-          alt="two kids watching sunset"
-          // height={400}
-          // width={225}
-          placeholder="blur"
-        />
-        <Image
-          src={grid2}
-          alt="two kids watching sunset"
-          // height={400}
-          // width={225}
-          placeholder="blur"
-        />
-        <Image
-          src={grid4}
-          alt="two kids watching sunset"
-          // height={400}
-          // width={225}
-          placeholder="blur"
-        />
-        <Image
-          src={grid1}
-          alt="two kids watching sunset"
-          // height={400}
-          // width={225}
+          alt="sunset at sea"
+          height={2759}
+          width={4197}
           placeholder="blur"
         />
         <Image
           src={grid6}
-          alt="two kids watching sunset"
-          // height={400}
-          // width={225}
+          alt="picture of mountains"
+          height={2007}
+          width={3567}
+          placeholder="blur"
+        />
+
+        <Image
+          src={grid2}
+          alt="small boats following a ship"
+          height={2209}
+          width={3924}
           placeholder="blur"
         />
         <Image
           src={grid5}
-          alt="two kids watching sunset"
-          // height={400}
-          // width={225}
+          alt="path through the fields"
+          height={2119}
+          width={3468}
+          placeholder="blur"
+        />
+        <Image
+          src={grid4}
+          alt="small boats following a ship at night"
+          height={4624}
+          width={2601}
           placeholder="blur"
         />
         <Image
           src={grid8}
-          alt="two kids watching sunset"
-          // height={400}
-          // width={225}
+          alt="man walking on a hill"
+          height={2117}
+          width={3762}
           placeholder="blur"
         />
         <Image
+          src={grid1}
+          alt="sunset at river"
+          height={4483}
+          width={3209}
+          placeholder="blur"
+        />
+
+        <Image
           src={grid7}
-          alt="two kids watching sunset"
-          // height={400}
-          // width={225}
+          alt="another picture of a mountain row"
+          height={2601}
+          width={4624}
           placeholder="blur"
         />
       </section>
-      <Footer />
+      <Footer image="bg-lightGreen" />
     </main>
   );
 }
