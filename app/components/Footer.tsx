@@ -3,7 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import footerImgGreen from "@/public/img/footerGreen.jpg";
 import footerImgBlue from "@/public/img/footerBlue.jpg";
-import { cormorant_uni } from "../fonts";
+import footerImgBlack from "@/public/img/footerBlack.jpg";
+import { cormorant_uni } from "../lib/fonts";
 
 const Footer = ({
   image,
@@ -12,10 +13,16 @@ const Footer = ({
 }) => {
   return (
     <footer
-      className={`p-5 gap-5 ${image} text-creme justify-center flex items-center`}
+      className={`p-5 gap-5 ${image} text-creme justify-center shadow shadow-darkBlue flex items-center`}
     >
       <Image
-        src={image === "bg-darkBlue" ? footerImgBlue : footerImgGreen}
+        src={
+          image === "bg-darkBlue"
+            ? footerImgBlue
+            : image === "bg-lightGreen"
+            ? footerImgGreen
+            : footerImgBlack
+        }
         alt="picture of a boat in a river"
         height={380}
         width={1023}

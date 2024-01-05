@@ -1,4 +1,4 @@
-import profileImg from "@/public/img/profile.jpg";
+import heroImg from "@/public/img/heroImg.jpg";
 import secondaryImg from "@/public/img/8.jpg";
 import grid1 from "@/public/img/11.jpg";
 import grid2 from "@/public/img/16.jpg";
@@ -14,29 +14,30 @@ import Footer from "./components/Footer";
 export default function Home() {
   return (
     <main className={`h-screen`}>
-      <section className="h-4/5 px-4 flex items-center text-darkGreen justify-evenly">
+      <section
+        id="hero-section"
+        className="h-4/5 px-4 flex items-center text-darkGreen justify-center gap-8"
+      >
         <div>
           <h1 className="text-9xl text-end font-medium tracking-wide">
             AFTHAB
             <br /> IQBAL
           </h1>
-          <p className="text-end text-lg">Rarely based photographer</p>
+          <p className="text-end text-xl">Rarely based photographer</p>
         </div>
-        {/* <div className="w-[30%]"> */}
         <Image
-          className="w-fit"
-          src={profileImg}
+          className="w-fit animate-fadeIn shadow shadow-darkBlue"
+          src={heroImg}
           alt="photo of me ;)"
           height={500}
           width={400}
           placeholder="blur"
           property={"true"}
         />
-        {/* </div> */}
       </section>
       <section className="h-2/5 px-20 gap-10 bg-[#45B1E8]/70 text-darkGreen justify-center flex items-center">
         <Image
-          // className="border-[10px] border-brown"
+          className="shadow shadow-darkBlue"
           src={secondaryImg}
           alt="picture of a small boat"
           height={400}
@@ -52,7 +53,7 @@ export default function Home() {
         particular moment- reliving it. */}
         </p>
       </section>
-      <section className="my-32 columns-4 gap-0 overflow-hidden">
+      <section className="my-32 columns-4 gap-0 shadow shadow-darkBlue overflow-hidden">
         <Image
           src={grid3}
           alt="sunset at sea"

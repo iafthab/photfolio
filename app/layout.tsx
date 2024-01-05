@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Link from "next/link";
-import { kaisei, cormorant_uni } from "./fonts";
+import { kaisei, cormorant_uni } from "./lib/fonts";
 
 export const metadata: Metadata = {
   title: "Photfolio",
@@ -15,9 +15,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${kaisei.className} bg-white text-brown`}>
+      <body className={`${kaisei.className} bg-[#f3f4ef] text-brown`}>
         <nav
-          className={`${cormorant_uni.className} flex px-4 items-start justify-between font-semibold text-2xl py-4`}
+          className={`${cormorant_uni.className} flex px-4 items-start justify-between font-semibold text-2xl py-5`}
         >
           <Link
             className="font-bold hover:text-darkGreen hover-underline"

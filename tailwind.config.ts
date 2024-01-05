@@ -9,17 +9,22 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        brown: "#7D4A1D",
+        brown: "#633914",
         lightOrange: "#DDA15E",
         creme: "#FEFAE0",
         darkGreen: "#283618",
         lightGreen: "#666E38",
         darkBlue: "#192F37",
       },
-      // fontFamily: {
-      //   kaisei: ["var(--font-kaisei)", "serif"],
-      //   cormorant: ["var(--font-cormorant)", "serif"],
-      // },
+      keyframes: {
+        fade: {
+          "0%": { opacity: "0.8" },
+          "100%": { opacity: "1" },
+        },
+      },
+      animation: {
+        fadeIn: "fadeIn 1s ease-in",
+      },
     },
   },
   plugins: [],
