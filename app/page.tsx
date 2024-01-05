@@ -25,6 +25,7 @@ export default function Home() {
           </h1>
           <p className="text-end text-xl">Rarely based photographer</p>
         </div>
+        {/* <div className="w-[30%]"> */}
         <Image
           className="w-fit animate-fadeIn shadow shadow-darkBlue"
           src={heroImg}
@@ -34,6 +35,7 @@ export default function Home() {
           placeholder="blur"
           property={"true"}
         />
+        {/* </div> */}
       </section>
       <section className="h-2/5 px-20 gap-10 bg-[#45B1E8]/70 text-darkGreen justify-center flex items-center">
         <Image
