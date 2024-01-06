@@ -45,11 +45,11 @@ const Gallery = () => {
       {/* <h1 className={`${cormorant_uni.className} px-4 text-9xl text-darkGreen`}>
         GALLERY
       </h1> */}
-      <section className="m-3 columns-3 lg:columns-4 gap-3 ">
+      <section className="lg:m-3 m-1 md:m-2 columns-2 md:columns-3 lg:columns-4 gap-1 md:gap-2 lg:gap-3 ">
         <Image
           loading="lazy"
           placeholder="blur"
-          className="w-full shadow shadow-darkBlue mb-3 h-auto"
+          className="w-full shadow shadow-darkBlue mb-1 md:mb-2 lg:mb-3 h-auto"
           src={sea12}
           alt="a kid holding a boy's hand at beach"
         />
@@ -57,7 +57,7 @@ const Gallery = () => {
         <Image
           loading="lazy"
           placeholder="blur"
-          className="w-full shadow shadow-darkBlue my-3 h-auto"
+          className="w-full shadow shadow-darkBlue my-1 md:mb-2 lg:mb-3 h-auto"
           src={sea4}
           alt="beach at dusk"
         />
@@ -65,42 +65,42 @@ const Gallery = () => {
         <Image
           loading="lazy"
           placeholder="blur"
-          className="w-full shadow shadow-darkBlue my-3 h-auto"
+          className="w-full shadow shadow-darkBlue my-1 md:mb-2 lg:mb-3 h-auto"
           src={sea11}
           alt=" small boats following a ship at night"
         />
         <Image
           loading="lazy"
           placeholder="blur"
-          className="w-full shadow shadow-darkBlue my-3 h-auto"
+          className="w-full shadow shadow-darkBlue my-1 md:mb-2 lg:mb-3 h-auto"
           src={sea5}
           alt="two kids watching sunset at beach"
         />
         <Image
           loading="lazy"
           placeholder="blur"
-          className="w-full shadow shadow-darkBlue my-3 h-auto"
+          className="w-full shadow shadow-darkBlue my-1 md:mb-2 lg:mb-3 h-auto"
           src={sea6}
           alt="picture of a kid and boats"
         />
         <Image
           loading="lazy"
           placeholder="blur"
-          className="w-full shadow shadow-darkBlue my-3 h-auto"
+          className="w-full shadow shadow-darkBlue my-1 md:mb-2 lg:mb-3 h-auto"
           src={sea7}
           alt="sunset at river"
         />
         <Image
           loading="lazy"
           placeholder="blur"
-          className="w-full shadow shadow-darkBlue my-3 h-auto"
+          className="w-full shadow shadow-darkBlue my-1 md:mb-2 lg:mb-3 h-auto"
           src={sea8}
           alt="picture of a 'SMALL' boat "
         />
         <Image
           loading="lazy"
           placeholder="blur"
-          className="w-full shadow shadow-darkBlue my-3 h-auto"
+          className="w-full shadow shadow-darkBlue my-1 md:mb-2 lg:mb-3 h-auto"
           src={sea9}
           alt="picture of small boats following a ship"
         />
@@ -108,7 +108,7 @@ const Gallery = () => {
         <Image
           loading="lazy"
           placeholder="blur"
-          className="w-full shadow shadow-darkBlue my-3 h-auto"
+          className="w-full shadow shadow-darkBlue my-1 md:mb-2 lg:mb-3 h-auto"
           src={sea10}
           alt="a kid holding a boy facing the sea"
         />
@@ -116,35 +116,35 @@ const Gallery = () => {
         <Image
           loading="lazy"
           placeholder="blur"
-          className="w-full shadow shadow-darkBlue my-3 h-auto"
+          className="w-full shadow shadow-darkBlue my-1 md:mb-2 lg:mb-3 h-auto"
           src={sea3}
           alt="sunset at sea"
         />
         <Image
           loading="lazy"
           placeholder="blur"
-          className="w-full shadow shadow-darkBlue my-3 h-auto"
+          className="w-full shadow shadow-darkBlue my-1 md:mb-2 lg:mb-3 h-auto"
           src={sea13}
           alt="moment of sunset"
         />
         <Image
           loading="lazy"
           placeholder="blur"
-          className="w-full shadow shadow-darkBlue my-3 h-auto"
+          className="w-full shadow shadow-darkBlue my-1 md:mb-2 lg:mb-3 h-auto"
           src={sea2}
           alt="moment of sunset"
         />
         <Image
           loading="lazy"
           placeholder="blur"
-          className="w-full shadow shadow-darkBlue my-3 h-auto"
+          className="w-full shadow shadow-darkBlue my-1 md:mb-2 lg:mb-3 h-auto"
           src={sea14}
           alt="moment of sunset"
         />
         <Image
           loading="lazy"
           placeholder="blur"
-          className="w-full shadow shadow-darkBlue my-3 h-auto"
+          className="w-full shadow shadow-darkBlue my-1 md:mb-2 lg:mb-3 h-auto"
           src={sea15}
           alt="moment of sunset"
         />
@@ -152,14 +152,14 @@ const Gallery = () => {
         <Image
           loading="lazy"
           placeholder="blur"
-          className="w-full shadow shadow-darkBlue h-auto my-3"
+          className="w-full shadow shadow-darkBlue h-auto my-1 md:mb-2 lg:mb-3"
           src={green4}
           alt="tea plantation"
         />
         <Image
           loading="lazy"
           placeholder="blur"
-          className="w-full shadow shadow-darkBlue h-auto my-3"
+          className="w-full shadow shadow-darkBlue h-auto my-1 md:mb-2 lg:mb-3"
           src={green6}
           alt="mountains"
         />
@@ -167,56 +167,56 @@ const Gallery = () => {
         <Image
           loading="lazy"
           placeholder="blur"
-          className="w-full shadow shadow-darkBlue h-auto my-3"
+          className="w-full shadow shadow-darkBlue h-auto my-1 md:mb-2 lg:mb-3"
           src={green5}
           alt="path through the fields"
         />
         <Image
           loading="lazy"
           placeholder="blur"
-          className="w-full shadow shadow-darkBlue h-auto my-3"
+          className="w-full shadow shadow-darkBlue h-auto my-1 md:mb-2 lg:mb-3"
           src={green3}
           alt="a house covered in fog"
         />
         <Image
           loading="lazy"
           placeholder="blur"
-          className="w-full shadow shadow-darkBlue h-auto my-3"
+          className="w-full shadow shadow-darkBlue h-auto my-1 md:mb-2 lg:mb-3"
           src={green7}
           alt="picture of a hills"
         />
         <Image
           loading="lazy"
           placeholder="blur"
-          className="w-full shadow shadow-darkBlue h-auto my-3"
+          className="w-full shadow shadow-darkBlue h-auto my-1 md:mb-2 lg:mb-3"
           src={green8}
           alt="picture of a hills"
         />
         <Image
           loading="lazy"
           placeholder="blur"
-          className="w-full shadow shadow-darkBlue h-auto my-3"
+          className="w-full shadow shadow-darkBlue h-auto my-1 md:mb-2 lg:mb-3"
           src={green2}
           alt="picture of tea plantation covered in fog"
         />
         <Image
           loading="lazy"
           placeholder="blur"
-          className="w-full shadow shadow-darkBlue h-auto my-3"
+          className="w-full shadow shadow-darkBlue h-auto my-1 md:mb-2 lg:mb-3"
           src={random8}
           alt="picture of a streetlights at night"
         />
         <Image
           loading="lazy"
           placeholder="blur"
-          className="w-full shadow shadow-darkBlue h-auto my-3"
+          className="w-full shadow shadow-darkBlue h-auto my-1 md:mb-2 lg:mb-3"
           src={green1}
           alt="coconut trees covering the sky"
         />
         <Image
           loading="lazy"
           placeholder="blur"
-          className="w-full shadow shadow-darkBlue h-auto my-3"
+          className="w-full shadow shadow-darkBlue h-auto my-1 md:mb-2 lg:mb-3"
           src={random1}
           alt="picture of clock tower"
         />
@@ -224,28 +224,28 @@ const Gallery = () => {
         <Image
           loading="lazy"
           placeholder="blur"
-          className="w-full shadow shadow-darkBlue h-auto my-3"
+          className="w-full shadow shadow-darkBlue h-auto my-1 md:mb-2 lg:mb-3"
           src={random3}
           alt="a small vendor at beach"
         />
         <Image
           loading="lazy"
           placeholder="blur"
-          className="w-full shadow shadow-darkBlue h-auto my-3"
+          className="w-full shadow shadow-darkBlue h-auto my-1 md:mb-2 lg:mb-3"
           src={random4}
           alt="architecture of a masjid"
         />
         <Image
           loading="lazy"
           placeholder="blur"
-          className="w-full shadow shadow-darkBlue h-auto my-3"
+          className="w-full shadow shadow-darkBlue h-auto my-1 md:mb-2 lg:mb-3"
           src={random6}
           alt="dusk through the windows"
         />
         <Image
           loading="lazy"
           placeholder="blur"
-          className="w-full shadow shadow-darkBlue h-auto my-3"
+          className="w-full shadow shadow-darkBlue h-auto my-1 md:mb-2 lg:mb-3"
           src={random7}
           alt="traditional kerala house"
         />
@@ -253,28 +253,28 @@ const Gallery = () => {
         <Image
           loading="lazy"
           placeholder="blur"
-          className="w-full shadow shadow-darkBlue h-auto my-3"
+          className="w-full shadow shadow-darkBlue h-auto my-1 md:mb-2 lg:mb-3"
           src={random9}
           alt="a man walking on a hill"
         />
         <Image
           loading="lazy"
           placeholder="blur"
-          className="w-full shadow shadow-darkBlue h-auto my-3"
+          className="w-full shadow shadow-darkBlue h-auto my-1 md:mb-2 lg:mb-3"
           src={random10}
           alt="a man walking on a hill"
         />
         <Image
           loading="lazy"
           placeholder="blur"
-          className="w-full shadow shadow-darkBlue h-auto my-3"
+          className="w-full shadow shadow-darkBlue h-auto my-1 md:mb-2 lg:mb-3"
           src={random2}
           alt="picture of a wall"
         />
         <Image
           loading="lazy"
           placeholder="blur"
-          className="w-full shadow shadow-darkBlue my-3 h-auto"
+          className="w-full shadow shadow-darkBlue my-1 md:mb-2 lg:mb-3 h-auto"
           src={sea1}
           alt="picture of a boat"
         />

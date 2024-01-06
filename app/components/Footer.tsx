@@ -13,7 +13,7 @@ const Footer = ({
 }) => {
   return (
     <footer
-      className={`p-5 gap-5 ${image} text-creme justify-center shadow shadow-darkBlue flex items-center`}
+      className={`p-2 lg:p-5 gap-2 lg:gap-5 ${image} text-creme justify-center shadow shadow-darkBlue flex items-center`}
     >
       <Image
         src={
@@ -27,9 +27,10 @@ const Footer = ({
         height={380}
         width={1023}
         placeholder="blur"
+        className="w-3/4 lg:w-4/5"
       />
       <nav
-        className={`${cormorant_uni.className} flex flex-col font-bold text-2xl py-6`}
+        className={`${cormorant_uni.className} flex flex-col font-bold text-base md:text-xl lg:text-2xl py-6`}
       >
         <Link className={`hover-underline w-min`} href={"./"}>
           home

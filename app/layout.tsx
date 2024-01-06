@@ -17,7 +17,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${kaisei.className} bg-[#f3f4ef] text-brown`}>
         <nav
-          className={`${cormorant_uni.className} flex px-4 items-start justify-between font-semibold text-2xl py-5`}
+          className={`${cormorant_uni.className} flex p-2 items-start justify-between font-semibold text-lg md:text-xl xl:text-2xl lg:p-4`}
         >
           <Link
             className="font-bold hover:text-darkGreen hover-underline"

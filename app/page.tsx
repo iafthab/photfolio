@@ -16,46 +16,43 @@ export default function Home() {
     <main className={`h-screen`}>
       <section
         id="hero-section"
-        className="h-4/5 px-4 flex items-center text-darkGreen justify-center gap-8"
+        className="h-fit xl:h-5/6 mx-4 lg:flex lg:flex-row lg:mb-36 items-center relative text-blue-50 lg:text-darkGreen justify-center gap-8"
       >
-        <div>
-          <h1 className="text-9xl text-end font-medium tracking-wide">
-            AFTHAB
-            <br /> IQBAL
+        <div className="absolute lg:static top-32 bottom-[0] right-[0] left-[0] m-auto lg:m-0 w-40 md:w-80 lg:w-fit">
+          <h1 className="text-3xl md:text-6xl xl:text-8xl lg:text-end font-medium tracking-wide">
+            AFTHAAB
           </h1>
-          <p className="text-end text-xl">Rarely based photographer</p>
+          <p className="text-center lg:text-end text-[10px] md:text-[14px] lg:text-xl">
+            Rarely based photographer
+          </p>
         </div>
-        {/* <div className="w-[30%]"> */}
         <Image
-          className="w-fit animate-fadeIn shadow shadow-darkBlue"
+          className="w-fit animate-fadeIn mx-auto lg:mx-0 block shadow shadow-darkBlue xl:w-[35%]"
           src={heroImg}
-          alt="photo of me ;)"
+          alt="man facing the sea"
           height={500}
           width={400}
           placeholder="blur"
           property={"true"}
         />
-        {/* </div> */}
       </section>
-      <section className="h-2/5 px-20 gap-10 bg-[#45B1E8]/70 text-darkGreen justify-center flex items-center">
+      <section className="h-2/5 px-10 lg:px-20 gap-2 my-6 md:my-16 lg:gap-10 bg-[#45B1E8]/70 text-darkGreen justify-center flex items-center">
         <Image
-          className="shadow shadow-darkBlue"
+          className="shadow shadow-darkBlue w-1/2 sm:w-1/3 lg:w-full xl:w-1/3"
           src={secondaryImg}
           alt="picture of a small boat"
           height={400}
           width={300}
           placeholder="blur"
         />
-        <p className="text-3xl font-light text-balance">
+        <p className="text-[12px] md:text-xl lg:text-2xl xl:text-3xl font-light text-balance">
           Every Picture contains a story. How that frame came to be. The moment
           of the snap. What transpired before and after.
-          {/* I am not saying this because iam a sh!tty photographer,or maybe i am, But more than
-          lighting or composition, a picture should capture the spirit of the
-          moment. While looking at these pictures, i feel like i am back at that
-        particular moment- reliving it. */}
+          {/* I am not saying this because iam a sh!tty photographer,or maybe i am, But more than lighting or composition, a picture should capture the spirit of the
+          moment. While looking at these pictures, i feel like i am back at that particular moment- reliving it. */}
         </p>
       </section>
-      <section className="my-32 columns-4 gap-0 shadow shadow-darkBlue overflow-hidden">
+      <section className="my-6 lg:my-32 columns-2 md:columns-3 lg:columns-4 gap-0 shadow shadow-darkBlue overflow-hidden">
         <Image
           src={grid3}
           alt="sunset at sea"
